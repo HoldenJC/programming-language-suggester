@@ -62,9 +62,27 @@ $(function(){
       questionnaireComplete = false;
     }
 
-    
+    var numberOfQuestions = 5;
+    var userResult;
 
+    if(questionnaireComplete) {
+      var resultScore = 0;
+      resultScore += parseInt($("#question1").val());
+      resultScore += parseInt($("#question2").val());
+      resultScore += parseInt($("#question3").val());
+      resultScore += parseInt($("#question4").val());
+      resultScore += parseInt($("#question5").val());
 
+      userResult = resultScore / numberOfQuestions;
+      if (userResult < 1.66){
+        $("#programmingLanguage").text("Python");
+      } else if (userResult < 2.33){
+        $("#programmingLanguage").text("Ruby+Ruby on Rails");
+      } else {
+        $("#programmingLanguage").text("Java");
+      }
+      $("#questionnaireResult").show();
+    }
     event.preventDefault();
   });
 });
