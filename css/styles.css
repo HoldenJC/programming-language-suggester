@@ -1,5 +1,11 @@
+#programmingQuestionnaire {
+  display: block;
+}
+
 #questionnaireResult {
   display: none;
+  text-align: center;
+  font-weight: bold;
 }
 
 .form-control:hover {

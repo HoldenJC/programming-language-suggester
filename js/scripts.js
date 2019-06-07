@@ -81,7 +81,10 @@ $(function(){
       } else {
         $("#programmingLanguage").text("Java");
       }
-      $("#questionnaireResult").show();
+      $("#questionnaireResult").fadeIn(800);
+      $("#programmingQuestionnaire").slideUp(600);
+
+      // $("div#outerDiv").toggleClass("outerComplete");
 
       $("div#outerDiv").removeClass("outer");
       $("div#outerDiv").addClass("outerComplete");
