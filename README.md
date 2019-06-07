@@ -6,7 +6,7 @@
 
 ## Description
 
-_Website application made to provide user with a questionnaire for them to fill out that will once complete suggest a programming language for them to learn._
+_Website application made to provide user with a questionnaire for them to fill out that will, once complete, suggest a programming language for them to learn._
 
 ## Setup/Installation Requirements
 
@@ -20,14 +20,14 @@ _If you have any questions, ideas, concerns, or would like to contribute in some
 
 ## Technologies Used
 
-_HTML_
-_CSS_
-_Bootstrap_
-_JavaScript_
-_jQuery_
-_Atom_
-_GitHub_
-_GitBash_
+_HTML,_
+_CSS,_
+_Bootstrap,_
+_JavaScript,_
+_jQuery,_
+_Atom,_
+_GitHub,_
+_GitBash,_
 _Google Chrome_
 
 ### License
