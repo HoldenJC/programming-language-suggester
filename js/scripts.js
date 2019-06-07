@@ -38,9 +38,33 @@ function doremove5() {    //doremovex functions will remove the first option fro
 $(function(){
   $("#programmingQuestionnaire").submit(function(event){
 
+    $("#programmingQuestionnaire span").remove();
+    var questionnaireComplete = true;
+
+    if ($("#question1").val() === '0'){
+      $("#question1").after('<span class="text-danger">Please select an option to proceed</span>');
+      questionnaireComplete = false;
+    }
+    if ($("#question2").val() === '0'){
+      $("#question2").after('<span class="text-danger">Please select an option to proceed</span>');
+      questionnaireComplete = false;
+    }
+    if ($("#question3").val() === '0'){
+      $("#question3").after('<span class="text-danger">Please select an option to proceed</span>');
+      questionnaireComplete = false;
+    }
+    if ($("#question4").val() === '0'){
+      $("#question4").after('<span class="text-danger">Please select an option to proceed</span>');
+      questionnaireComplete = false;
+    }
+    if ($("#question5").val() === '0'){
+      $("#question5").after('<span class="text-danger">Please select an option to proceed</span>');
+      questionnaireComplete = false;
+    }
+
+    
 
 
-
-      event.preventDefault();
+    event.preventDefault();
   });
 });
