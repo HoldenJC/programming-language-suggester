@@ -76,10 +76,13 @@ $(function(){
       userResult = resultScore / numberOfQuestions;
       if (userResult < 1.66){
         $("#programmingLanguage").append('<a href="https://www.python.org/Python">Python</a>');
+        $("#pythonResult").show();
       } else if (userResult < 2.33){
         $("#programmingLanguage").append('<a href="https://rubyonrails.org/">Ruby + Ruby on Rails</a>');
+        $("#rubyResult").show();
       } else {
         $("#programmingLanguage").append('<a href="https://www.java.com/en/">Java</a>');
+        $("#javaResult").show();
       }
       $("#questionnaireResult").fadeIn(800);
       $("#programmingQuestionnaire").slideUp(600);

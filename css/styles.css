@@ -2,8 +2,11 @@
   display: block;
 }
 
-#questionnaireResult {
+#questionnaireResult, #pythonResult, #rubyResult, #javaResult {
   display: none;
+}
+
+#completeMessage {
   text-align: center;
   font-weight: bold;
 }
@@ -24,6 +27,12 @@
   height: 100vh;
   min-height: 100%;
   margin: 0 auto;
+  transition: 2s linear all;
+}
+
+.card {
+  margin: 20px;
+  box-shadow: 3px 3px 5px grey;
 }
 
 /*failed attempt to add a background image underneath image in bottom right hand corner*/
@@ -50,6 +59,7 @@
   height: 100vh;
   min-height: 100%;
   margin: 0 auto;
+  transition: 2s linear all;
 }
 
 .jumbotron {
