@@ -12,7 +12,8 @@
       <div class="jumbotron">
         <h1>Programming Language Suggester Application</h1>
       </div>
-      <h4 class="centerText">Fill out the questionnaire below to get your suggested coding language to learn!</h4>
+      <h5 class="centerText">Fill out the questionnaire below to get your suggested coding language to learn!</h5>
+      <br>
 
       <form id="programmingSurvey">
         <div class="formItem">
@@ -23,8 +24,48 @@
             <option value="2">Neutral</option>
             <option value="3">Uncomfy</option>
           </select>
-
         </div>
+
+        <div class="formItem">
+          <label for="question2">What are you looking to do with programming?</label>
+          <select class="form-control" onfocus="doremove2();" id="question2">
+            <option value="0">Please select</option>
+            <option value="1">I want to make apps for smartphones</option>
+            <option value="2">I want to make websites like AirBnB and Hulu</option>
+            <option value="3">I want to learn a general-purpose programming language</option>
+          </select>
+        </div>
+
+        <div class="formItem">
+          <label for="question3">Question 3</label>
+          <select class="form-control" onfocus="doremove3();" id="question3">
+            <option value="0">Please select</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </select>
+        </div>
+
+        <div class="formItem">
+          <label for="question4">Question 4</label>
+          <select class="form-control" onfocus="doremove4();" id="question4">
+            <option value="0">Please select</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </select>
+        </div>
+
+        <div class="formItem">
+          <label for="question4">Question 5</label>
+          <select class="form-control" onfocus="doremove4();" id="question4">
+            <option value="0">Please select</option>
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+          </select>
+        </div>
+
       </form>
     </div>
   </body>
