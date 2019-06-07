@@ -8,14 +8,24 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
-    <div class="container">
+    <div class="container-fluid">
       <div class="jumbotron">
         <h1>Programming Language Suggester Application</h1>
       </div>
-      <h4 class="centerText">Fill out the questionaire below to get your suggested coding language to learn!</h4>
+      <h4 class="centerText">Fill out the questionnaire below to get your suggested coding language to learn!</h4>
 
+      <form id="programmingSurvey">
+        <div class="formItem">
+          <label for="question1">How comfortable are you with learning complex syntax statements?</label>
+          <select class="form-control" onfocus="doremove1();" id="question1">
+            <option value="0">Please select</option>
+            <option value="1">Comfy</option>
+            <option value="2">Neutral</option>
+            <option value="3">Uncomfy</option>
+          </select>
 
-
+        </div>
+      </form>
     </div>
   </body>
 </html>
