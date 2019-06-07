@@ -75,11 +75,11 @@ $(function(){
 
       userResult = resultScore / numberOfQuestions;
       if (userResult < 1.66){
-        $("#programmingLanguage").text("Python");
+        $("#programmingLanguage").append('<a href="https://www.python.org/Python">Python</a>');
       } else if (userResult < 2.33){
-        $("#programmingLanguage").text("Ruby+Ruby on Rails");
+        $("#programmingLanguage").append('<a href="https://rubyonrails.org/">Ruby + Ruby on Rails</a>');
       } else {
-        $("#programmingLanguage").text("Java");
+        $("#programmingLanguage").append('<a href="https://www.java.com/en/">Java</a>');
       }
       $("#questionnaireResult").fadeIn(800);
       $("#programmingQuestionnaire").slideUp(600);
