@@ -9,154 +9,153 @@
   </head>
   <body>
     <div id="outerDiv" class="outer">
-    <div class="container-fluid">
-      <div class="jumbotron">
-        <h1>Programming Language Suggester Application</h1>
+      <div class="container-fluid">
+        <div class="jumbotron">
+          <h1>Programming Language Suggester Application</h1>
+        </div>
+
+        <form id="programmingQuestionnaire">
+          <h5 class="centerText">Which programming language is best for you? Fill out the questionnaire below to get your suggested language!</h5>
+          <br>
+          <div class="formItem">
+            <label for="question1">How comfortable are you with learning complex syntax statements?</label>
+            <select class="form-control" onfocus="doremove1();" id="question1">
+              <option value="0">Please select</option>
+              <option value="3">Comfy</option>
+              <option value="2">Neutral</option>
+              <option value="1">Uncomfy</option>
+            </select>
+          </div>
+
+          <div class="formItem">
+            <label for="question2">What are you looking to do with programming?</label>
+            <select class="form-control" onfocus="doremove2();" id="question2">
+              <option value="0">Please select</option>
+              <option value="3">I want to make apps for smartphones</option>
+              <option value="2">I want to make websites like AirBnB and Hulu</option>
+              <option value="1">I want to learn a general-purpose programming language</option>
+            </select>
+          </div>
+
+          <div class="formItem">
+            <label for="question3">Do you have any prior programming experience?</label>
+            <select class="form-control" onfocus="doremove3();" id="question3">
+              <option value="0">Please select</option>
+              <option value="1">None whatsoever</option>
+              <option value="2">Some light experience</option>
+              <option value="3">A solid amount of coding experience</option>
+            </select>
+          </div>
+
+          <div class="formItem">
+            <label for="question4">Do you have any interest in machine learning?</label>
+            <select class="form-control" onfocus="doremove4();" id="question4">
+              <option value="0">Please select</option>
+              <option value="2">No</option>
+              <option value="3">Some</option>
+              <option value="1">Yes</option>
+            </select>
+          </div>
+
+          <div class="formItem">
+            <label for="question5">Is it necessary for the programming language you learn be in the highest demand in the job market?</label>
+            <select class="form-control" onfocus="doremove5();" id="question5">
+              <option value="0">Please select</option>
+              <option value="2">No, that doesn't matter as much to me</option>
+              <option value="1">It's important, but not the most important thing to me</option>
+              <option value="3">Yes, my ability to easily find a job after learning the language is everything to me</option>
+            </select>
+          </div>
+          <br>
+
+          <button type="submit" class="btn btn-info" name="completeQuestionnaire">Submit Questionnaire</button>
+        </form>
+
+        <div id="questionnaireResult">
+          <br>
+          <h3 id="completeMessage"><span id="programmingLanguage"></span> is the best programming language for you! Congratulations!!!</p></h3>
+          <br>
+
+          <div id="pythonResult">
+            <div class="row">
+              <div class="col card text-white bg-primary mb-3">
+                <div class="card-header">Fact 1</div>
+                <div class="card-body">
+                  <h5 class="card-title">Python is Open Source</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+              <div class="col card text-white bg-primary mb-3">
+                <div class="card-header">Fact 2</div>
+                <div class="card-body">
+                  <h5 class="card-title">Made for Readability</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+              <div class="col card text-white bg-primary mb-3">
+                <div class="card-header">Fact 3</div>
+                <div class="card-body">
+                  <h5 class="card-title">Also a Type of Snake</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="rubyResult">
+            <div class="row">
+              <div class="col card text-white bg-danger mb-3">
+                <div class="card-header">Fact 1</div>
+                <div class="card-body">
+                  <h5 class="card-title">Ruby is Open Source</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+              <div class="col card text-white bg-danger mb-3">
+                <div class="card-header">Fact 2</div>
+                <div class="card-body">
+                  <h5 class="card-title">Focused on Simplicity</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+              <div class="col card text-white bg-danger mb-3">
+                <div class="card-header">Fact 3</div>
+                <div class="card-body">
+                  <h5 class="card-title">Also a Type of Gem</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div id="javaResult">
+            <div class="row">
+              <div class="col card text-white bg-success mb-3">
+                <div class="card-header">Fact 1</div>
+                <div class="card-body">
+                  <h5 class="card-title">Java is Object-Oriented</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+              <div class="col card text-white bg-success mb-3">
+                <div class="card-header">Fact 2</div>
+                <div class="card-body">
+                  <h5 class="card-title">Java was Originally Called Oak</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+              <div class="col card text-white bg-success mb-3">
+                <div class="card-header">Fact 3</div>
+                <div class="card-body">
+                  <h5 class="card-title">Also Coffee</h5>
+                  <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
       </div>
-
-      <form id="programmingQuestionnaire">
-        <h5 class="centerText">Which programming language is best for you? Fill out the questionnaire below to get your suggested language!</h5>
-        <br>
-        <div class="formItem">
-          <label for="question1">How comfortable are you with learning complex syntax statements?</label>
-          <select class="form-control" onfocus="doremove1();" id="question1">
-            <option value="0">Please select</option>
-            <option value="3">Comfy</option>
-            <option value="2">Neutral</option>
-            <option value="1">Uncomfy</option>
-          </select>
-        </div>
-
-        <div class="formItem">
-          <label for="question2">What are you looking to do with programming?</label>
-          <select class="form-control" onfocus="doremove2();" id="question2">
-            <option value="0">Please select</option>
-            <option value="3">I want to make apps for smartphones</option>
-            <option value="2">I want to make websites like AirBnB and Hulu</option>
-            <option value="1">I want to learn a general-purpose programming language</option>
-          </select>
-        </div>
-
-        <div class="formItem">
-          <label for="question3">Do you have any prior programming experience?</label>
-          <select class="form-control" onfocus="doremove3();" id="question3">
-            <option value="0">Please select</option>
-            <option value="1">None whatsoever</option>
-            <option value="2">Some light experience</option>
-            <option value="3">A solid amount of coding experience</option>
-          </select>
-        </div>
-
-        <div class="formItem">
-          <label for="question4">Do you have any interest in machine learning?</label>
-          <select class="form-control" onfocus="doremove4();" id="question4">
-            <option value="0">Please select</option>
-            <option value="2">No</option>
-            <option value="3">Some</option>
-            <option value="1">Yes</option>
-          </select>
-        </div>
-
-        <div class="formItem">
-          <label for="question5">Is it necessary for the programming language you learn be in the highest demand in the job market?</label>
-          <select class="form-control" onfocus="doremove5();" id="question5">
-            <option value="0">Please select</option>
-            <option value="2">No, that doesn't matter as much to me</option>
-            <option value="1">It's important, but not the most important thing to me</option>
-            <option value="3">Yes, my ability to easily find a job after learning the language is everything to me</option>
-          </select>
-        </div>
-        <br>
-
-        <button type="submit" class="btn btn-info" name="completeQuestionnaire">Submit Questionnaire</button>
-      </form>
-
-      <div id="questionnaireResult">
-        <br>
-        <h3 id="completeMessage"><span id="programmingLanguage"></span> is the best programming language for you! Congratulations!!!</p></h3>
-        <br>
-
-        <div id="pythonResult">
-        <div class="row">
-          <div class="col card text-white bg-primary mb-3">
-            <div class="card-header">Fact 1</div>
-            <div class="card-body">
-              <h5 class="card-title">Python is Open Source</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-          <div class="col card text-white bg-primary mb-3">
-            <div class="card-header">Fact 2</div>
-            <div class="card-body">
-              <h5 class="card-title">Made for Readability</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-          <div class="col card text-white bg-primary mb-3">
-            <div class="card-header">Fact 3</div>
-            <div class="card-body">
-              <h5 class="card-title">Also a Type of Snake</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="rubyResult">
-        <div class="row">
-          <div class="col card text-white bg-danger mb-3">
-            <div class="card-header">Fact 1</div>
-            <div class="card-body">
-              <h5 class="card-title">Ruby is Open Source</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-          <div class="col card text-white bg-danger mb-3">
-            <div class="card-header">Fact 2</div>
-            <div class="card-body">
-              <h5 class="card-title">Focused on Simplicity</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-          <div class="col card text-white bg-danger mb-3">
-            <div class="card-header">Fact 3</div>
-            <div class="card-body">
-              <h5 class="card-title">Also a Type of Gem</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      <div id="javaResult">
-        <div class="row">
-          <div class="col card text-white bg-success mb-3">
-            <div class="card-header">Fact 1</div>
-            <div class="card-body">
-              <h5 class="card-title">Java is Object-Oriented</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-          <div class="col card text-white bg-success mb-3">
-            <div class="card-header">Fact 2</div>
-            <div class="card-body">
-              <h5 class="card-title">Java was Originally Called Oak</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-          <div class="col card text-white bg-success mb-3">
-            <div class="card-header">Fact 3</div>
-            <div class="card-body">
-              <h5 class="card-title">Also Coffee</h5>
-              <p class="card-text">Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.  Sample text that I have typed so there is something within this card to give me an idea of what it will look like with content.</p>
-          </div>
-          </div>
-        </div>
-      </div>
-
-      </div>
-
-    </div>
     </div>
   </body>
 </html>
