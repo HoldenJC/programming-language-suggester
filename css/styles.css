@@ -34,6 +34,12 @@
   margin: 20px;
   box-shadow: 3px 3px 5px grey;
 }
+.card-header {
+  background-color: rgba(0, 0, 0, 0.1) !important;
+  margin-right: -0.925rem !important;
+  margin-left: -0.925rem !important;
+}
+
 
 /*failed attempt to add a background image underneath image in bottom right hand corner*/
 /* .outer {
