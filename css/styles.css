@@ -26,6 +26,22 @@
   margin: 0 auto;
 }
 
+/*failed attempt to add a background image underneath image in bottom right hand corner*/
+/* .outer {
+  background-color: rgba(238, 238, 238, 0.70) !important;
+  background-image: url("https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg"), url("https://i.imgflip.com/1lj6ra.jpg");
+  background-blend-mode: color, screen;
+  position: absolute, relative;
+  z-index: 1, 1000;
+  background-size: cover, auto;
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  overflow: visible;
+  height: 100vh;
+  min-height: 100%;
+  margin: 0 auto;
+} */
+
 .outerComplete {
   background-image: url("https://i.dlpng.com/static/png/485575_preview.png");
   background-position: right bottom;
