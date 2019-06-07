@@ -8,21 +8,23 @@
     <title>Programming Language Suggester</title>
   </head>
   <body>
+    <div id="outerDiv" class="outer">
     <div class="container-fluid">
       <div class="jumbotron">
         <h1>Programming Language Suggester Application</h1>
       </div>
-      <h5 class="centerText">Fill out the questionnaire below to get your suggested coding language to learn!</h5>
+      <h5 class="centerText">Which programming language is best for you? Fill out the questionnaire below to get your suggested language!</h5>
       <br>
 
       <form id="programmingQuestionnaire">
+
         <div class="formItem">
           <label for="question1">How comfortable are you with learning complex syntax statements?</label>
           <select class="form-control" onfocus="doremove1();" id="question1">
             <option value="0">Please select</option>
-            <option value="1">Comfy</option>
+            <option value="3">Comfy</option>
             <option value="2">Neutral</option>
-            <option value="3">Uncomfy</option>
+            <option value="1">Uncomfy</option>
           </select>
         </div>
 
@@ -30,9 +32,9 @@
           <label for="question2">What are you looking to do with programming?</label>
           <select class="form-control" onfocus="doremove2();" id="question2">
             <option value="0">Please select</option>
-            <option value="1">I want to make apps for smartphones</option>
+            <option value="3">I want to make apps for smartphones</option>
             <option value="2">I want to make websites like AirBnB and Hulu</option>
-            <option value="3">I want to learn a general-purpose programming language</option>
+            <option value="1">I want to learn a general-purpose programming language</option>
           </select>
         </div>
 
@@ -50,9 +52,9 @@
           <label for="question4">Do you have any interest in machine learning?</label>
           <select class="form-control" onfocus="doremove4();" id="question4">
             <option value="0">Please select</option>
-            <option value="1">No</option>
-            <option value="2">Some</option>
-            <option value="3">Yes</option>
+            <option value="2">No</option>
+            <option value="3">Some</option>
+            <option value="1">Yes</option>
           </select>
         </div>
 
@@ -60,8 +62,8 @@
           <label for="question5">Is it necessary for the programming language you learn be in the highest demand in the job market?</label>
           <select class="form-control" onfocus="doremove5();" id="question5">
             <option value="0">Please select</option>
-            <option value="1">No, that doesn't matter as much to me</option>
-            <option value="2">It's important, but not the most important thing to me</option>
+            <option value="2">No, that doesn't matter as much to me</option>
+            <option value="1">It's important, but not the most important thing to me</option>
             <option value="3">Yes, my ability to easily find a job after learning the language is everything to me</option>
           </select>
         </div>
@@ -71,9 +73,11 @@
       </form>
 
       <div id="questionnaireResult">
+        <br>
         <p>Placeholder Text <span id="programmingLanguage"></span></p>
       </div>
 
+    </div>
     </div>
   </body>
 </html>

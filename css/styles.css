@@ -2,6 +2,30 @@
   display: none;
 }
 
+.form-control:hover {
+  box-shadow: 3px 3px 5px grey;
+}
+
+.outer {
+  background-image: url("https://i.imgflip.com/1lj6ra.jpg");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  overflow: visible;
+  height: 100vh;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
+.outerComplete {
+  background-image: url("https://i.dlpng.com/static/png/485575_preview.png");
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  overflow: visible;
+  height: 100vh;
+  min-height: 100%;
+  margin: 0 auto;
+}
+
 .jumbotron {
   text-align: center;
   padding: 40px;

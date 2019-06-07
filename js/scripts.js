@@ -63,7 +63,7 @@ $(function(){
     }
 
     var numberOfQuestions = 5;
-    var userResult;
+    var userResult = 0;
 
     if(questionnaireComplete) {
       var resultScore = 0;
@@ -82,6 +82,10 @@ $(function(){
         $("#programmingLanguage").text("Java");
       }
       $("#questionnaireResult").show();
+
+      $("div#outerDiv").removeClass("outer");
+      $("div#outerDiv").addClass("outerComplete");
+
     }
     event.preventDefault();
   });
